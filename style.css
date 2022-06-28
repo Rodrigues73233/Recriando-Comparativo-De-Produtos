@@ -1,0 +1,141 @@
+/* Fonts importadas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Ubuntu:wght@700&display=swap');
+
+/* Configuração Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+/* Configuração Geral das Box */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 640px;
+}
+
+.box {
+  width: 350px;
+  height: 620px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.box-1 {
+  background-color: #fefefe;
+}
+
+.box-2 {
+  background-image:linear-gradient(to bottom, #253f8f, #63beb6);
+}
+
+.box-3 {
+  background-color: #fefefe;
+}
+
+.title {
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+
+.title h3 {
+  font-size: 35px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.title p {
+  font-size: 28px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.title span {
+  color: #68c8b1;
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
+}
+
+.texts {
+  font-family: 'Inter', sans-serif;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.texts p {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.buttons button {
+  width: 200px;
+  align-self: center;
+  border-radius: 40px;
+  margin-top: 10px;
+  padding: 18px;
+  font-size: 15px;
+}
+
+.buttons button:nth-child(1) {
+  border: none;
+  background-color: #69c7b7;
+  color: white;
+  box-shadow: 4px 4px 10px #4c919a
+}
+
+/* Configuração especifica para cada Box */
+
+/* Título */
+.box-2 .title h3 {
+  color: white;
+}
+
+.box-2 .title p {
+  color: white;
+}
+
+.box-1 .title h3, .box-3 .title h3 {
+  color: #274287;
+}
+
+.box-1 .title p, .box-3 .title p {
+  color: #274287;
+}
+
+.box-1 .texts, .box-3 .texts {
+  color: #1d497b;
+}
+
+/* Texto */
+.box-2 .texts {
+  color: white;
+}
+
+/* Botoes */
+.box-1 .buttons button:nth-child(2),.box-3 .buttons button:nth-child(2) {
+  border: 2px solid #71c7b5;
+  background-color: white;
+  color: #7ccfbc;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  box-shadow: 4px 4px 40px #bebec0;
+}
+
+.box-2 .buttons button:nth-child(2) {
+  border: 1px solid #fffeff;
+  background-color: inherit;
+  color: white;
+  font-size: 16px;
+  box-shadow: 4px 4px 40px #407d8f;
+}
